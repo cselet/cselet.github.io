@@ -1,0 +1,29 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# deprecated
+#relative_permalinks: true
+
+# Setup
+title:               LET
+tagline:             'گفتگوهای آزاد علمی'
+#description:         'یک تم فارسی شده برای <a href="http://jekyllrb.com" target="_blank">Jekyll</a> که از پروژه‌ی <a href="https://github.com/poole/lanyon" target="_blank">Lanyon</a> آن فورک‌شده‌است. سازنده تم اصلی <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. فارسی کننده <a href="https://twitter.com/sm96dd" target="_blank">@sm96dd</a>. فونت اسفاده شده: <a href="https://github.com/rastikerdar/vazir-font">وزیر</a>.'
+description:          ''
+
+url:                 http://cselet.github.io/
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Mohammad Shiravand
+  url:               https://twitter.com/sm96dd
+  email:             sm96dd@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+#gems
+gems:
+  - 'jekyll-paginate'
