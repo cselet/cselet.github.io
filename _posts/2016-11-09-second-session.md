@@ -1,6 +1,7 @@
 ---
 layout: post
 title: گزارش جلسه‌ی دوم گروه LET
+categories: sessions reports
 ---
 
 
