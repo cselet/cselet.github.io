@@ -27,4 +27,3 @@ version:             1.0.0
 #gems
 gems:
   - 'jekyll-paginate'
-  - 'jalalidate'

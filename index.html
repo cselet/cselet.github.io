@@ -12,7 +12,7 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | jdate: "%A %d %b %Y"}}</span>
+    <span class="post-date">{{ post.date | date: '%B %d, %Y' }}</span>
 
     {{ post.content }}
   </div>
@@ -35,3 +35,17 @@ title: Home
     <span class="pagination-item newer">جدیدتر</span>
   {% endif %}
 </div>
+
+<script>
+  var JDate = require('jdate');
+  var elements = $(".post-date");
+  var i = 0;
+  while (i < elements.length) {
+    item = elements[i];
+    value = item.innerHTML;
+    mdate = new Date(value);
+    jdate = new JDate(mdate).format('dddd DD MMMM YYYY');
+    item.innerHTML = jdate;
+    i++;
+  }
+</script>
