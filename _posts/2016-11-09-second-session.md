@@ -21,4 +21,4 @@ title: گزارش جلسه‌ی دوم گروه LET
 
 [سخنرانی ریچارد استالمن «نرم‌افزار آزاد، جامعه آزاد»](https://mega.nz/#!tUo0hbIJ!9gT8zhYYmCQYzeor7WoAjezHm2bmg1KuAtL58Cqxwo4)
 
-(http://jmp.sh/b/KDriY7TUyo3EcHC5Bz1R)[عکس‌های جلسه دوم]
+[عکس‌های جلسه دوم](http://jmp.sh/b/KDriY7TUyo3EcHC5Bz1R)
