@@ -25,19 +25,33 @@
       {% endif %}
     {% endfor %}
 
+
+    {% comment %}
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">پروژه‌ی گیت‌هاب</a>
+    {% endcomment %}
+
+    <a class="sidebar-nav-item" href="https://github.com/cselet/cselet.github.io/">پروژه‌ی گیت‌هاب</a>
+
+    <span class="sidebar-nav-item">لیست جلسات</span>
+
+    {% for post in site.posts reversed %}
+        <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ post.url }}">{{ post.title }}</a>
+        {% comment %}
+        <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>
+        {% endcomment %}
+    {% endfor %}
+
   <!--
     <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
   -->
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">پروژه‌ی گیت‌هاب</a>
+    {% comment %}
     <span class="sidebar-nav-item">ورژن v{{ site.version }}</span>
+    {% endcomment %}
   </nav>
 
   <div class="sidebar-item">
     <p>
-       تمامی حقوق محفوظ می باشد &copy; {{ site.time | date: '%Y' }}.
+       تمامی حقوق محفوظ می‌باشد &copy; {{ site.time | date: '%Y' }}.
     </p>
   </div>
 </div>
-
-
-
