@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">{{ page.date | jdate: "%A %d %b %Y"}}</span>
   {{ content }}
 </div>
 
@@ -17,7 +17,7 @@ layout: default
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
             {% comment%}
-            <small>{{ post.date | date_to_string }}</small>
+            <small>{{ page.date | jdate: "%A %d %b %Y"}}</small>
             {% endcomment%}
           </a>
         </h3>
